@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forest Fire Prediction</title>
+	<style>
+	  h1 {color: #00e6c6;}
+	  h2 {color: #e8d33c;}
+	  h3 {color: #ff7070;}
+	  p {color: #181818;}
+	  body, pre {
+	  	margin: 3.5%;
+	  	font-family: "Comic Sans MS",Georgia;
+	  	background-color: #f3ffe1;
+	  	font-size: large;
+	  }
+	  table, th, td {
+		  border: 1px solid black;
+	  }
+	  th,td{
+	  	padding: 10px;
+	  }
+      .divv{
+          display: inline-block;
+          width: 150px;
+      }
+      input{
+        width: 300px;
+        padding: 10px;
+      }
+      #submit{
+          background-color: #00e6c6;
+          border: none;
+          border: 1px solid rgb(65, 62, 62); 
+          border-width: 1px 2px 2px 1px;
+          padding: 10px;
+          /* margin-left: 10%; */
+      }
+      
+      
+	</style>
+</head>
+<body>
+	<header style="text-align: center;">
+		<h1>Forest Fire Prediction</h1>
+	</header>
+<div>
+	<!-- <h3>Links to other parts</h3>
+	<p><a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-1/lec-1.html">Lec1</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-2/lec-2.html">Lec2</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-3/lec-3.html">Lec3</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Tut-1/tut-1.html">Tut1</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-4/lec-4.html">Lec4</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-5/lec-5.html">Lec5</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Tut-2/tut-2.html">Tut2</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-6/lec-6.html">Lec6</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-7/lec-7.html">Lec7</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-8/lec-8.html">Lec8</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Tut-3/tut-3.html">Tut3</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-9/lec-9.html">Lec9</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-10/lec-10.html">Lec10</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-11/lec-11.html">Lec11</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Tut-4/tut-4.html">Tut4</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-12/lec-12.html">Lec12</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-13/lec-13.html">Lec13</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-14/lec-14.html">Lec14</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Tut-5/tut-5.html">Tut5</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-15/lec-15.html">Lec15</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-16/lec-16.html">Lec16</a>|<a href="file:///C:/Users/Priyal/Desktop/ME204/Lec-17/lec-17.html">Lec17</a></p> -->
+</div>
+
+	<section style="text-align: center;">
+
+        <form action="/predict" method="post">
+            <div class="divv">
+                <label>Oxygen: </label>
+            </div>
+            <input type="text" placeholder="Enter any numerical value" id="oxygen" name="oxygen" /><br><br>
+            
+            <div class="divv">
+                <label>Temperature: </label>
+            </div>
+            <input type="text" placeholder="Enter any numerical value" id="temperature" name="temperature" /><br><br>       
+
+            <div class="divv">
+                <label>Humidity: </label>
+            </div>
+            <input type="text" placeholder="Enter any numerical value" id="humidity" name="humidity" /><br><br>
+            
+            <br><br>
+            <input type="submit" id="submit" value="Predict" ></input>
+        </form>
+
+        <h2>Result:</h2>
+		<h3 id="prediction"><strong>{{pred}}</strong></h3>
+		<!-- <img src="" height="50%" width="50%"> -->
+
+		<section> 
+			<h4></h4>
+		</section>
+
+	</section>
+
+	<hr>
+
+	<section>
+		<h2></h2>
+	</section>
+
+	<!-- <span style="border: solid; padding: 7px;"></span> -->
+
+
+	<!-- <table style="width:100%">
+	  <tr>
+	    <th></th>
+	    <th></th>
+	    <th></th>
+	  </tr>
+	  <tr>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td></td>
+	    <td></td>
+	    <td></td>
+	  </tr>
+	</table> -->
+
+	<footer style="text-align: center;">
+		<small>&copy; Priyal Dubey</small>
+	</footer>
+</body>
