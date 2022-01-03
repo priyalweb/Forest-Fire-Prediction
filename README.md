@@ -18,4 +18,4 @@ Regression Models:
 -scipy.interpolate
 
 Dataset link:
-https://drive.google.com/file/d/1nCjfIZJHSZdS_mlVzsDJwf6-3qt3cF4y/view?usp=sharing
+https://drive.google.com/file/d/1fgG1bjiyW_BqFPNgCTONfy0FUcApm8k6/view?usp=sharing
